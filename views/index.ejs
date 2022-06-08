@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <%- include('../partials/head.ejs'); %>
+    <!-- sending title of the page dynamically from the server  -->
+    <title><%= title %></title>
+</head>
+<body>
+    <!-- <a href="/">Home</a>
+    <a href="/about">About</a> -->
+
+    <!-- Do display things we used to add = equal to sign in the begniging of the tag
+         but if we just want to render but don't want to escape we using hypen sign in
+         the biggning of ejs tags 
+    -->
+
+    <%- include('../partials/nav.ejs'); %>
+
+    <div class="container mt-4">
+        <h1>Hello from express JS Java!</h1>
+        <a href="/download">Download file</a>
+    </div>
+</body>
+</html>
